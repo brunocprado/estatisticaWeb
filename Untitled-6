@@ -1,0 +1,181 @@
+Starting Nmap 5.21 ( http://nmap.org ) at 2016-07-21 00:24 BRT
+Nmap scan report for 200.20.215.1
+Host is up (0.0024s latency).
+Not shown: 999 closed ports
+PORT    STATE SERVICE
+443/tcp open  https
+
+Nmap scan report for acesso.intranet.ifrj.edu.br (200.20.215.42)
+Host is up (0.0012s latency).
+Not shown: 978 closed ports
+PORT      STATE    SERVICE
+80/tcp    open     http
+110/tcp   filtered pop3
+143/tcp   filtered imap
+443/tcp   open     https
+465/tcp   filtered smtps
+587/tcp   filtered submission
+993/tcp   filtered imaps
+995/tcp   filtered pop3s
+1433/tcp  filtered ms-sql-s
+1755/tcp  filtered wms
+2222/tcp  filtered unknown
+3001/tcp  filtered nessus
+3389/tcp  open     ms-term-serv
+4848/tcp  filtered unknown
+5060/tcp  filtered sip
+6006/tcp  filtered X11:6
+7070/tcp  filtered realserver
+8080/tcp  filtered http-proxy
+8081/tcp  filtered blackice-icecap
+8088/tcp  filtered unknown
+9998/tcp  filtered unknown
+49152/tcp filtered unknown
+
+Nmap scan report for aldea.intranet.ifrj.edu.br (200.20.215.53)
+Host is up (0.0024s latency).
+All 1000 scanned ports on aldea.intranet.ifrj.edu.br (200.20.215.53) are closed
+
+Nmap scan report for dimorus.intranet.ifrj.edu.br (200.20.215.62)
+Host is up (0.0028s latency).
+Not shown: 974 filtered ports
+PORT      STATE  SERVICE
+20/tcp    closed ftp-data
+21/tcp    closed ftp
+22/tcp    closed ssh
+80/tcp    open   http
+110/tcp   closed pop3
+143/tcp   closed imap
+443/tcp   open   https
+465/tcp   closed smtps
+587/tcp   closed submission
+993/tcp   closed imaps
+995/tcp   closed pop3s
+1433/tcp  closed ms-sql-s
+1755/tcp  closed wms
+2222/tcp  closed unknown
+3001/tcp  closed nessus
+3306/tcp  closed mysql
+3389/tcp  closed ms-term-serv
+4848/tcp  closed unknown
+5060/tcp  closed sip
+6006/tcp  closed X11:6
+7070/tcp  closed realserver
+8080/tcp  open   http-proxy
+8081/tcp  closed blackice-icecap
+8088/tcp  closed unknown
+9998/tcp  closed unknown
+49152/tcp closed unknown
+
+Nmap scan report for genesis.intranet.ifrj.edu.br (200.20.215.101)
+Host is up (0.0019s latency).
+Not shown: 998 filtered ports
+PORT      STATE SERVICE
+80/tcp    open  http
+49152/tcp open  unknown
+
+Nmap scan report for 200.20.215.119
+Host is up (0.0024s latency).
+Not shown: 998 filtered ports
+PORT    STATE  SERVICE
+22/tcp  open   ssh
+443/tcp closed https
+
+Nmap scan report for ns2.ifrj.edu.br (200.20.215.130)
+Host is up (0.0032s latency).
+All 1000 scanned ports on ns2.ifrj.edu.br (200.20.215.130) are closed
+
+Nmap scan report for 200.20.215.182
+Host is up (0.0048s latency).
+Not shown: 964 closed ports
+PORT      STATE SERVICE
+23/tcp    open  telnet
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+443/tcp   open  https
+445/tcp   open  microsoft-ds
+554/tcp   open  rtsp
+1090/tcp  open  unknown
+1688/tcp  open  unknown
+1720/tcp  open  H.323/Q.931
+1721/tcp  open  unknown
+3306/tcp  open  mysql
+3389/tcp  open  ms-term-serv
+4444/tcp  open  krb524
+4445/tcp  open  unknown
+4446/tcp  open  unknown
+5060/tcp  open  sip
+5061/tcp  open  sip-tls
+5222/tcp  open  unknown
+5269/tcp  open  unknown
+5280/tcp  open  unknown
+7070/tcp  open  realserver
+8000/tcp  open  http-alt
+8001/tcp  open  unknown
+8009/tcp  open  ajp13
+8011/tcp  open  unknown
+8080/tcp  open  http-proxy
+8083/tcp  open  unknown
+8443/tcp  open  https-alt
+15003/tcp open  unknown
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49156/tcp open  unknown
+49158/tcp open  unknown
+
+Nmap scan report for 200.20.215.215
+Host is up (0.0019s latency).
+Not shown: 979 closed ports
+PORT      STATE    SERVICE
+80/tcp    filtered http
+110/tcp   filtered pop3
+143/tcp   filtered imap
+443/tcp   open     https
+465/tcp   filtered smtps
+587/tcp   filtered submission
+993/tcp   filtered imaps
+995/tcp   filtered pop3s
+1433/tcp  filtered ms-sql-s
+1755/tcp  filtered wms
+2222/tcp  filtered unknown
+3001/tcp  filtered nessus
+4848/tcp  filtered unknown
+5060/tcp  filtered sip
+6006/tcp  filtered X11:6
+7070/tcp  filtered realserver
+8080/tcp  filtered http-proxy
+8081/tcp  filtered blackice-icecap
+8088/tcp  filtered unknown
+9998/tcp  filtered unknown
+49152/tcp filtered unknown
+
+Nmap scan report for sigaedu.ifrj.edu.br (200.20.215.230)
+Host is up (0.0020s latency).
+Not shown: 979 closed ports
+PORT      STATE    SERVICE
+80/tcp    filtered http
+110/tcp   filtered pop3
+143/tcp   filtered imap
+443/tcp   open     https
+465/tcp   filtered smtps
+587/tcp   filtered submission
+993/tcp   filtered imaps
+995/tcp   filtered pop3s
+1433/tcp  filtered ms-sql-s
+1755/tcp  filtered wms
+2222/tcp  filtered unknown
+3001/tcp  filtered nessus
+4848/tcp  filtered unknown
+5060/tcp  filtered sip
+6006/tcp  filtered X11:6
+7070/tcp  filtered realserver
+8080/tcp  filtered http-proxy
+8081/tcp  filtered blackice-icecap
+8088/tcp  filtered unknown
+9998/tcp  filtered unknown
+49152/tcp filtered unknown
+
+Nmap done: 256 IP addresses (10 hosts up) scanned in 14.84 seconds

@@ -1,0 +1,141 @@
+body{ margin:0; padding: 0; }
+#arquivo{
+    display: none !important;
+}
+#sidebar{
+    background-image: url(../img/b.png);
+    background-size: cover;
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 220px;
+}
+#container{
+    position:absolute;
+    left: 220px;
+    top:0;
+    bottom:0;
+    right:0;
+}
+.titulo{
+    font-size: 20px;
+    display: block;
+    color: white;
+    width: 100%;
+    text-align:center;
+    font-weight: bold;
+    margin: 22px 0;
+    text-shadow: 0 0 5px black;
+}
+.menu{
+    display: block;
+    padding: 10px 20px;
+    width: calc(100% - 60px);
+    border-radius: 10px;
+    margin: 0 10px 6px 10px;   
+    cursor: pointer;
+}
+.menu.ativo{
+    background: rgba(255,255,255,.22);
+}
+.menu label{
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    line-height: 32px;
+    margin-left: 15px;
+    font-family: "Arial";
+    font-size: 14px;
+/*            text-shadow: 0 0 4px #444;*/
+}
+.menu img{
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+
+
+/*Container*/
+#mapa{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+#tabela{
+    height: 100%;
+    width: 100%;
+    display:none;
+}
+
+
+/*Menu*/
+
+#menuMapa{
+    z-index:9;
+    position:absolute;
+    top: 10px; right: 10px;
+    background: rgba(255,255,255,.8);
+    border-radius: 5px;
+    padding:15px;
+    box-shadow: 0 0 5px #888;
+    width: 140px;
+    /*height: 200px; */
+    
+}
+#menuMapa h3{
+    margin-top: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    display:block;
+}
+#menuMapa label{
+    margin-bottom: 12px;
+    display:block;
+}
+#menuMapa .lever{
+    float:right;
+    margin-top: 3px;
+}
+
+label input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+label [type="checkbox"]:not(:checked), label [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+label .lever {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 15px;
+    background-color: #818181;
+    border-radius: 15px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+}
+label .lever::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-color: #F1F1F1;
+    border-radius: 21px;
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
+    left: -5px;
+    top: -3px;
+    transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
+}
+label input[type="checkbox"]:checked + .lever { background-color: #84c7c1; }
+label input[type="checkbox"]:checked + .lever::after {
+    background-color: #26a69a;
+    left: 24px;
+}

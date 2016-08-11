@@ -1,0 +1,168 @@
+Starting Nmap 5.21 ( http://nmap.org ) at 2016-07-20 23:28 BRT
+NSE: Loaded 36 scripts for scanning.
+Initiating ARP Ping Scan at 23:28
+Scanning 10.0.10.70 [1 port]
+Completed ARP Ping Scan at 23:28, 0.00s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 23:28
+Completed Parallel DNS resolution of 1 host. at 23:29, 11.00s elapsed
+Initiating SYN Stealth Scan at 23:29
+Scanning 10.0.10.70 [1000 ports]
+Discovered open port 1720/tcp on 10.0.10.70
+Discovered open port 23/tcp on 10.0.10.70
+Discovered open port 80/tcp on 10.0.10.70
+Discovered open port 8080/tcp on 10.0.10.70
+Discovered open port 554/tcp on 10.0.10.70
+Discovered open port 445/tcp on 10.0.10.70
+Discovered open port 3389/tcp on 10.0.10.70
+Discovered open port 135/tcp on 10.0.10.70
+Discovered open port 443/tcp on 10.0.10.70
+Discovered open port 3306/tcp on 10.0.10.70
+Discovered open port 139/tcp on 10.0.10.70
+Discovered open port 8443/tcp on 10.0.10.70
+Discovered open port 5060/tcp on 10.0.10.70
+Discovered open port 49158/tcp on 10.0.10.70
+Discovered open port 5061/tcp on 10.0.10.70
+Discovered open port 5280/tcp on 10.0.10.70
+Discovered open port 1721/tcp on 10.0.10.70
+Discovered open port 49152/tcp on 10.0.10.70
+Discovered open port 1090/tcp on 10.0.10.70
+Discovered open port 8000/tcp on 10.0.10.70
+Discovered open port 49155/tcp on 10.0.10.70
+Discovered open port 4445/tcp on 10.0.10.70
+Discovered open port 8009/tcp on 10.0.10.70
+Discovered open port 49153/tcp on 10.0.10.70
+Discovered open port 4446/tcp on 10.0.10.70
+Discovered open port 15003/tcp on 10.0.10.70
+Discovered open port 7070/tcp on 10.0.10.70
+Discovered open port 49156/tcp on 10.0.10.70
+Discovered open port 8011/tcp on 10.0.10.70
+Discovered open port 4444/tcp on 10.0.10.70
+Discovered open port 8001/tcp on 10.0.10.70
+Discovered open port 49154/tcp on 10.0.10.70
+Discovered open port 5269/tcp on 10.0.10.70
+Discovered open port 1688/tcp on 10.0.10.70
+Discovered open port 5222/tcp on 10.0.10.70
+Discovered open port 8083/tcp on 10.0.10.70
+Completed SYN Stealth Scan at 23:29, 1.44s elapsed (1000 total ports)
+Initiating Service scan at 23:29
+Scanning 36 services on 10.0.10.70
+Completed Service scan at 23:30, 116.07s elapsed (36 services on 1 host)
+Initiating OS detection (try #1) against 10.0.10.70
+NSE: Script scanning 10.0.10.70.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 23:31
+Completed NSE at 23:31, 30.24s elapsed
+NSE: Script Scanning completed.
+Nmap scan report for 10.0.10.70
+Host is up (0.00031s latency).
+Not shown: 964 closed ports
+PORT      STATE SERVICE       VERSION
+23/tcp    open  telnet?
+80/tcp    open  http          Apache Tomcat/Coyote JSP engine 1.1
+| html-title: SCOPIA Desktop
+|_Requested resource was http://10.0.10.70/scopia/entry/index.jsp
+| robots.txt: has 1 disallowed entry 
+|_/
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn
+443/tcp   open  ssl/https?
+445/tcp   open  netbios-ssn
+554/tcp   open  rtsp          Darwin Streaming Server 5.5.5
+1090/tcp  open  unknown
+1688/tcp  open  msrpc         Microsoft Windows RPC
+1720/tcp  open  tcpwrapped
+1721/tcp  open  unknown
+3306/tcp  open  mysql         MySQL (unauthorized)
+3389/tcp  open  microsoft-rdp Microsoft Terminal Service
+4444/tcp  open  krb524?
+4445/tcp  open  apc-agent     APC PowerChute agent
+4446/tcp  open  apc-agent     APC PowerChute agent
+5060/tcp  open  sip           (SIP end point; Status: 200 OK)
+5061/tcp  open  ssl/sip-tls?
+5222/tcp  open  jabber        ejabberd (Protocol 1.0)
+5269/tcp  open  jabber        ejabberd
+5280/tcp  open  http          ejabberd http admin
+|_html-title: Site doesn't have a title (text/html; charset=utf-8).
+7070/tcp  open  rtsp          Darwin Streaming Server 5.5.5
+8000/tcp  open  rtsp          Darwin Streaming Server 5.5.5
+8001/tcp  open  rtsp          Darwin Streaming Server 5.5.5
+8009/tcp  open  ajp13         Apache Jserv (Protocol v1.3)
+8011/tcp  open  http          GoAhead-Webs embedded httpd
+| html-title: Login
+|_Requested resource was http://10.0.10.70:8011/admin/ntboard/login.asp?requestedUrl=Lw==&authFailed=0&m=
+8080/tcp  open  http          Apache Tomcat/Coyote JSP engine 1.1
+|_html-title: Welcome to RADVISION iVIEW Suite
+|_http-open-proxy: Proxy might be redirecting requests
+8083/tcp  open  unknown
+8443/tcp  open  raid-mgt      Promise Array Manager RAID management
+15003/tcp open  tcpwrapped
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  unknown
+49158/tcp open  unknown
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port23-TCP:V=5.21%I=7%D=7/20%Time=57903374%P=x86_64-unknown-linux-gnu%r
+SF:(NULL,6,"cntr\r\n")%r(GenericLines,6,"cntr\r\n")%r(GetRequest,6,"cntr\r
+SF:\n")%r(HTTPOptions,6,"cntr\r\n")%r(RTSPRequest,6,"cntr\r\n")%r(RPCCheck
+SF:,6,"cntr\r\n")%r(DNSVersionBindReq,6,"cntr\r\n")%r(DNSStatusRequest,6,"
+SF:cntr\r\n")%r(Help,6,"cntr\r\n")%r(SSLSessionReq,6,"cntr\r\n")%r(SMBProg
+SF:Neg,6,"cntr\r\n")%r(X11Probe,6,"cntr\r\n")%r(FourOhFourRequest,6,"cntr\
+SF:r\n")%r(LPDString,6,"cntr\r\n")%r(LDAPBindReq,6,"cntr\r\n")%r(SIPOption
+SF:s,6,"cntr\r\n")%r(LANDesk-RC,6,"cntr\r\n")%r(TerminalServer,6,"cntr\r\n
+SF:")%r(NCP,6,"cntr\r\n")%r(NotesRPC,6,"cntr\r\n")%r(WMSRequest,6,"cntr\r\
+SF:n")%r(oracle-tns,6,"cntr\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5060-TCP:V=5.21%I=7%D=7/20%Time=57903381%P=x86_64-unknown-linux-gnu
+SF:%r(SIPOptions,124,"SIP/2\.0\x20200\x20OK\r\nFrom:\x20;tag=ro
+SF:ot\r\nTo:\x20;tag=7df0498-0-13c4-55022-109e73-71481b15-109
+SF:e73\r\nCall-ID:\x2050000\r\nCSeq:\x2042\x20OPTIONS\r\nVia:\x20SIP/2\.0/
+SF:TCP\x20nm;received=10\.0\.10\.167;branch=foo\r\nAllow:\x20INVITE,ACK,CA
+SF:NCEL,BYE,INFO,UPDATE,REFER,NOTIFY,SUBSCRIBE,SERVICE\r\nContent-Length:\
+SF:x200\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8083-TCP:V=5.21%I=7%D=7/20%Time=57903374%P=x86_64-unknown-linux-gnu
+SF:%r(GetRequest,33,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type:\x20
+SF:text/html\r\n\r\n")%r(FourOhFourRequest,46,"HTTP/1\.0\x20404\x20Not\x20
+SF:Found\r\nContent-Length:\x200\r\nContent-Type:\x20text/html\r\n\r\n")%r
+SF:(GenericLines,33,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type:\x20
+SF:text/html\r\n\r\n")%r(HTTPOptions,33,"HTTP/1\.0\x20404\x20Not\x20Found\
+SF:r\nContent-Type:\x20text/html\r\n\r\n")%r(RTSPRequest,33,"HTTP/1\.0\x20
+SF:404\x20Not\x20Found\r\nContent-Type:\x20text/html\r\n\r\n")%r(Help,33,"
+SF:HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type:\x20text/html\r\n\r\n"
+SF:)%r(SSLSessionReq,33,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type:
+SF:\x20text/html\r\n\r\n")%r(LPDString,33,"HTTP/1\.0\x20404\x20Not\x20Foun
+SF:d\r\nContent-Type:\x20text/html\r\n\r\n")%r(SIPOptions,46,"HTTP/1\.0\x2
+SF:0404\x20Not\x20Found\r\nContent-Length:\x200\r\nContent-Type:\x20text/h
+SF:tml\r\n\r\n");
+MAC Address: 78:E7:D1:61:67:6C (Unknown)
+Device type: general purpose
+Running: Microsoft Windows Vista|2008|7
+OS details: Microsoft Windows Vista SP0 - SP2, Server 2008, or Windows 7 Ultimate (build 7000)
+Uptime guess: 12.607 days (since Fri Jul  8 08:56:55 2016)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: Host: win-urg1ea5q1gd; OS: Windows; Device: power-device
+
+Host script results:
+| nbstat:  
+|   NetBIOS name: WIN-URG1EA5Q1GD, NetBIOS user: , NetBIOS MAC: 78:e7:d1:61:67:6c
+|   Names
+|     WORKGROUP<00>        Flags: 
+|     WIN-URG1EA5Q1GD<00>  Flags: 
+|_    WIN-URG1EA5Q1GD<20>  Flags: 
+| smb-os-discovery:  
+|   OS: Windows Server 2008 R2 Standard 7601 Service Pack 1 (Windows Server 2008 R2 Standard 6.1)
+|   Name: WORKGROUP\WIN-URG1EA5Q1GD
+|_  System time: 2016-07-20 23:28:36 UTC-3
+|_smbv2-enabled: Server supports SMBv2 protocol
+
+HOP RTT     ADDRESS
+1   0.31 ms 10.0.10.70
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 160.87 seconds

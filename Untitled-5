@@ -1,0 +1,61 @@
+Starting Nmap 5.21 ( http://nmap.org ) at 2016-07-21 00:07 BRT
+NSE: Loaded 36 scripts for scanning.
+Initiating ARP Ping Scan at 00:07
+Scanning 10.0.10.14 [1 port]
+Completed ARP Ping Scan at 00:07, 0.00s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 00:07
+Completed Parallel DNS resolution of 1 host. at 00:07, 11.00s elapsed
+Initiating SYN Stealth Scan at 00:07
+Scanning 10.0.10.14 [1000 ports]
+Discovered open port 80/tcp on 10.0.10.14
+Completed SYN Stealth Scan at 00:07, 0.04s elapsed (1000 total ports)
+Initiating Service scan at 00:07
+Scanning 1 service on 10.0.10.14
+Completed Service scan at 00:07, 6.06s elapsed (1 service on 1 host)
+Initiating OS detection (try #1) against 10.0.10.14
+Retrying OS detection (try #2) against 10.0.10.14
+Retrying OS detection (try #3) against 10.0.10.14
+Retrying OS detection (try #4) against 10.0.10.14
+Retrying OS detection (try #5) against 10.0.10.14
+NSE: Script scanning 10.0.10.14.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.09s elapsed
+NSE: Script Scanning completed.
+Nmap scan report for 10.0.10.14
+Host is up (0.00034s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.2.22 ((Ubuntu))
+| robots.txt: has 33 disallowed entries (15 shown)
+| /includes/ /misc/ /modules/ /profiles/ /scripts/ 
+| /themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt 
+| /INSTALL.pgsql.txt /install.php /INSTALL.txt /LICENSE.txt 
+|_/MAINTAINERS.txt /update.php
+| html-title: IFRJ |_Instituto Federal de Educa\xC3\xA7\xC3\xA3o, Ci\xC3\xAAncia e Tecnologia ...
+MAC Address: 00:50:56:B7:00:04 (VMware)
+No exact OS matches for host (If you know what OS is running on it, see http://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=5.21%D=7/21%OT=80%CT=1%CU=33274%PV=Y%DS=1%DC=D%G=Y%M=005056%TM=57
+OS:903C97%P=x86_64-unknown-linux-gnu)SEQ(SP=102%GCD=1%ISR=103%TI=Z%CI=Z%II=
+OS:I%TS=8)OPS(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%
+OS:O5=M5B4ST11NW7%O6=M5B4ST11)WIN(W1=3890%W2=3890%W3=3890%W4=3890%W5=3890%W
+OS:6=3890)ECN(R=Y%DF=Y%T=40%W=3908%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=
+OS:O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD
+OS:=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0
+OS:%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1
+OS:(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI
+OS:=N%T=40%CD=S)
+
+Uptime guess: 132.280 days (since Thu Mar 10 17:25:09 2016)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+HOP RTT     ADDRESS
+1   0.34 ms 10.0.10.14
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 29.50 seconds
+           Raw packets sent: 1111 (52.932KB) | Rcvd: 1082 (47.220KB)

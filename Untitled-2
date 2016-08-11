@@ -1,0 +1,447 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="pt-br" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/100930">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://10.0.10.75/sites/all/themes/ifrj/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Bem-vindo ao IFRJ | IFRJ</title>
+  <style>
+@import url("http://10.0.10.75/modules/system/system.base.css?o9g5xa");
+</style>
+<style>
+@import url("http://10.0.10.75/modules/field/theme/field.css?o9g5xa");
+@import url("http://10.0.10.75/sites/all/modules/views/css/views.css?o9g5xa");
+@import url("http://10.0.10.75/sites/all/modules/workflow/workflow_admin_ui/workflow_admin_ui.css?o9g5xa");
+@import url("http://10.0.10.75/sites/all/modules/ckeditor/css/ckeditor.css?o9g5xa");
+</style>
+<style>
+@import url("http://10.0.10.75/sites/all/modules/ctools/css/ctools.css?o9g5xa");
+</style>
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" media="all" />
+<style>
+@import url("http://10.0.10.75/sites/all/themes/bootstrap/css/overrides.css?o9g5xa");
+@import url("http://10.0.10.75/sites/all/themes/ifrj/css/style.css?o9g5xa");
+@import url("http://10.0.10.75/sites/all/themes/ifrj/bootstrap/css/bootstrap.css?o9g5xa");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
+<script src="http://10.0.10.75/misc/jquery.once.js?v=1.2"></script>
+<script src="http://10.0.10.75/misc/drupal.js?o9g5xa"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="http://10.0.10.75/sites/all/modules/admin_menu/admin_devel/admin_devel.js?o9g5xa"></script>
+<script src="http://10.0.10.75/sites/default/files/languages/pt-br_XzD8Inqh5WhiYPUCT-Y7NAhI_thOuVAVhKCAmqeu9Ik.js?o9g5xa"></script>
+<script src="http://10.0.10.75/sites/all/themes/ifrj/bootstrap/js/bootstrap.js?o9g5xa"></script>
+<script src="http://10.0.10.75/sites/all/themes/ifrj/bootstrap/js/jquery.js?o9g5xa"></script>
+<script src="http://10.0.10.75/sites/all/themes/ifrj/bootstrap/js/jquery-ui.js?o9g5xa"></script>
+<script src="http://10.0.10.75/sites/all/themes/ifrj/bootstrap/js/muda-menu.js?o9g5xa"></script>
+<script src="http://10.0.10.75/sites/all/themes/ifrj/bootstrap/js/escondeEsconde.js?o9g5xa"></script>
+<script src="http://10.0.10.75/sites/all/themes/ifrj/bootstrap/js/bootstrap-cdn.js?o9g5xa"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ifrj","theme_token":"5HlFQRlIRIxF9K4UwWcTQzk-V4nxjvKnzP7xaEt0gSI","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"\/\/code.jquery.com\/jquery-1.10.2.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/netdna.bootstrapcdn.com\/bootstrap\/3.0.2\/js\/bootstrap.min.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"public:\/\/languages\/pt-br_XzD8Inqh5WhiYPUCT-Y7NAhI_thOuVAVhKCAmqeu9Ik.js":1,"sites\/all\/themes\/ifrj\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/themes\/ifrj\/bootstrap\/js\/jquery.js":1,"sites\/all\/themes\/ifrj\/bootstrap\/js\/jquery-ui.js":1,"sites\/all\/themes\/ifrj\/bootstrap\/js\/muda-menu.js":1,"sites\/all\/themes\/ifrj\/bootstrap\/js\/escondeEsconde.js":1,"sites\/all\/themes\/ifrj\/bootstrap\/js\/bootstrap-cdn.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/workflow\/workflow_admin_ui\/workflow_admin_ui.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"\/\/netdna.bootstrapcdn.com\/bootstrap\/3.0.2\/css\/bootstrap.min.css":1,"sites\/all\/themes\/bootstrap\/css\/overrides.css":1,"sites\/all\/themes\/ifrj\/css\/style.css":1,"sites\/all\/themes\/ifrj\/bootstrap\/css\/bootstrap.css":1}},"urlIsAjaxTrusted":{"\/":true,"\/node?destination=node":true},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"click hover focus","delay":0,"container":"body"}}});</script>
+  
+</head>
+<body class="html front not-logged-in one-sidebar sidebar-first page-node" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Pular para o conteÃºdo principal</a>
+  </div>
+    
+<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+<ul id="menu-barra-temp" style="list-style:none;">
+	<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+    <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-Portal PadrÃ£oBarra de Identidade Visual do Governo Federal na Internet -APLICAÃÃOright:1px solid#EDEDED">
+    <a href="http://brasil.gov.br" style=font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
+	<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+</ul>
+</div>
+
+<div id="cabecalho" class="col-sm-12 fundo-header">
+<ul id="acessibilidade">
+	<li><a accesskey="1" href="#">ACESSIBILIDADE</a></li>
+    <li><a accesskey="2" href="#">ALTO CONTRASTE</a></li>
+    <li><a accesskey="3" href="#">MAPA DO SITE</a></li>
+</ul>
+<ul id="irpara">
+	<li><a href="/#main-content">Ir para o conteÃºdo<span class="irpara">&nbsp;1&nbsp;</span></a></li>
+    <li><a href="/#block-menu-menu-acesso-informacao">Ir para o menu<span class="irpara">&nbsp;2&nbsp;</span></a></li>
+    <li><a href="/#rodape">Ir para o rodapÃ©<span class="irpara">&nbsp;3&nbsp;</span></a></li>
+</ul>
+
+<a href="/" title="Logo IFRJ"><img src="/sites/all/themes/ifrj/logo-ifrj.png" alt="Logo IFRJ" id="logo-ifrj" /></a>
+
+  <div class="region region-cabecalho">
+    <section id="block-search-form" class="block block-search clearfix">
+
+      
+  <form class="form-search content-search" action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div>
+      <h2 class="element-invisible">FormulÃ¡rio de busca</h2>
+    <div class="input-group"><input title="Digite os termos que vocÃª deseja procurar." placeholder="Buscar" class="form-control form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" /><span class="input-group-btn"><button type="submit" class="btn btn-default"><i class="icon glyphicon glyphicon-search" aria-hidden="true"></i></button></span></div><button class="element-invisible btn btn-primary form-submit" id="edit-submit" name="op" value="Buscar" type="submit">Buscar</button>
+<input type="hidden" name="form_build_id" value="form-3ICblO01wm_02ow7sXHKfzBsCpYN6qQbrp4gyUGw3Zs" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>
+</section> <!-- /.block -->
+  </div>
+
+<ul id="redes-sociais">
+	<li><a class="facebook-icon" title="Facebook - IFRJ" href="http://www.facebook.com/ifrj.ascom"></a></li>
+    <li><a class="youtube-icon" title="Youtube - IFRJ" href="https://www.youtube.com/channel/UCYpGmXMywnhz8yNbQ__mUZg"></a></li>
+</ul>
+
+</div>
+<!-- /fim cabecalho -->
+
+<div id="servicos" class="col-sm-12" >
+<ul>
+	<li><a href="/node/13">Perguntas frequentes</a></li>
+    <li><a href="/node/87">Contato</a></li>
+    <li><a href="http://wiki.ifrj.edu.br/dokuwiki/doku.php?id=dgti:servicos">Central de serviÃ§os</a></li>
+    <li><a href="http://dados.gov.br/">Dados abertos</a></li>
+    <li class="last-servicos"><a href="#">Ãrea de imprensa</a></li>
+</ul>
+</div>
+<!-- /fim servicos -->
+
+<header id="navbar" role="banner" class="navbar container navbar-default">
+
+  <div class="container">
+    <div class="navbar-header">
+    
+    <span>VocÃª estÃ¡ aqui: </span>
+
+      
+      
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+          <div class="navbar-collapse collapse">
+        <nav role="navigation">
+       
+                      <ul class="menu nav navbar-nav"><li class="first last leaf active"><a href="/" class="active">InÃ­cio</a></li>
+</ul>                                      </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+
+        
+      <aside class="col-sm-3" role="complementary">
+       
+          <div class="region region-sidebar-first well">
+    <section id="block-menu-menu-acesso-informacao" class="block block-menu clearfix">
+
+        <h2 class="block-title">Acesso Ã  InformaÃ§Ã£o</h2>
+    
+  <ul class="menu nav"><li class="first collapsed"><a href="/acesso-a-informacao/acesso-%C3%A0-informa%C3%A7%C3%A3o" title="">Acesso Ã  InformaÃ§Ã£o</a></li>
+<li class="leaf"><a href="/acesso-a-informacao/institucional" title="">Institucional</a></li>
+<li class="leaf"><a href="/acesso-a-informacao/a%C3%A7%C3%B5es-e-programas" title="">AÃ§Ãµes e Programas</a></li>
+<li class="leaf"><a href="/acesso-a-informacao/auditorias" title="">Auditorias</a></li>
+<li class="leaf"><a href="/acesso-a-informacao/conv%C3%AAnios" title="">ConvÃªnios</a></li>
+<li class="leaf"><a href="/acesso-a-informacao/despesas" title="">Despesas</a></li>
+<li class="leaf"><a href="/acesso-a-informacao/licita%C3%A7%C3%B5es-e-contratos" title="">LicitaÃ§Ãµes e Contratos</a></li>
+<li class="leaf"><a href="/acesso-a-informacao/servidores" title="">Servidores</a></li>
+<li class="leaf"><a href="/acesso-a-informacao/perguntas-frequentes" title="">Perguntas Frequentes</a></li>
+<li class="leaf"><a href="http://www.acessoainformacao.gov.br/" title="">Sobre a Lei de Acesso</a></li>
+<li class="leaf"><a href="/acesso-a-informacao/servi%C3%A7o-informa%C3%A7%C3%A3o-ao-cidad%C3%A3o-sic" title="">ServiÃ§o de InformaÃ§Ã£o ao CidadÃ£o (SIC)</a></li>
+<li class="last leaf"><a href="/acesso-a-informacao/informa%C3%A7%C3%B5es-classificadas" title="">InformaÃ§Ãµes Classificadas</a></li>
+</ul>
+</section> <!-- /.block -->
+<section id="block-menu-menu-instituicao" class="block block-menu clearfix">
+
+        <h2 class="block-title">InstituiÃ§Ã£o</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="/instituicao/estrutura" title="">Estrutura</a></li>
+<li class="leaf"><a href="/instituicao/hist%C3%B3rico" title="">HistÃ³rico</a></li>
+<li class="leaf"><a href="/instituicao/ouvidoria" title="">Ouvidoria</a></li>
+<li class="leaf"><a href="/instituicao/documentos-institucionais" title="">Documentos Institucionais</a></li>
+<li class="last leaf"><a href="/instituicao/boletim-servi%C3%A7os" title="">Boletim de ServiÃ§os</a></li>
+</ul>
+</section> <!-- /.block -->
+<section id="block-menu-menu-cursos" class="block block-menu clearfix">
+
+        <h2 class="block-title">Cursos</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="/fic" title="">FIC</a></li>
+<li class="leaf"><a href="/curso-tecnico/cursos-m%C3%A9dio-t%C3%A9cnico" title="">MÃ©dio / TÃ©cnico</a></li>
+<li class="leaf"><a href="/curso-graduacao/cursos-gradua%C3%A7%C3%A3o" title="">GraduaÃ§Ã£o</a></li>
+<li class="last leaf"><a href="/curso-pos-graduacao/cursos-p%C3%B3s-gradua%C3%A7%C3%A3o" title="">PÃ³s-GraduaÃ§Ã£o</a></li>
+</ul>
+</section> <!-- /.block -->
+<section id="block-menu-menu-processo-seletivo-concurso" class="block block-menu clearfix">
+
+        <h2 class="block-title">Processo Seletivo / Concurso</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="/concurso-fic" title="">FIC</a></li>
+<li class="leaf"><a href="/processo-seletivo-tecnico/m%C3%A9dio-t%C3%A9cnico" title="">MÃ©dio / TÃ©cnico</a></li>
+<li class="leaf"><a href="/processo-seletivo-graduacao/gradua%C3%A7%C3%A3o" title="">GraduaÃ§Ã£o</a></li>
+<li class="leaf"><a href="/processo-seletivo-pos-graduacao/p%C3%B3s-gradua%C3%A7%C3%A3o" title="">PÃ³s-GraduaÃ§Ã£o</a></li>
+<li class="leaf"><a href="/concurso-tecnico-administrativo/t%C3%A9cnico-administrativo" title="">TÃ©cnico Administrativo</a></li>
+<li class="leaf"><a href="/concurso-docente/docente" title="">Docente</a></li>
+<li class="last leaf"><a href="/concurso-pronatec" title="">PRONATEC</a></li>
+</ul>
+</section> <!-- /.block -->
+<section id="block-menu-menu-campi" class="block block-menu clearfix">
+
+        <h2 class="block-title">Campi</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="/arraial-do-cabo/quem-somos" title="">Arraial do Cabo</a></li>
+<li class="leaf"><a href="/belford-roxo/quem-somos" title="">Belford Roxo</a></li>
+<li class="leaf"><a href="/centro/quem-somos" title="">Centro (Rio)</a></li>
+<li class="leaf"><a href="/cidade-de-deus/quem-somos" title="">Cidade de Deus (Rio)</a></li>
+<li class="leaf"><a href="/complexo-do-alemao/quem-somos" title="">Complexo do AlemÃ£o (Rio)</a></li>
+<li class="leaf"><a href="/duque-de-caxias/quem-somos" title="">Duque de Caxias</a></li>
+<li class="leaf"><a href="/engenheiro-paulo-de-frontin/quem-somos" title="">Engenheiro Paulo de Frontin</a></li>
+<li class="leaf"><a href="/mesquita/quem-somos" title="">Mesquita</a></li>
+<li class="leaf"><a href="/nilopolis/quem-somos" title="">NilÃ³polis</a></li>
+<li class="leaf"><a href="/niteroi/quem-somos" title="">NiterÃ³i</a></li>
+<li class="leaf"><a href="/paracambi/quem-somos" title="">Paracambi</a></li>
+<li class="leaf"><a href="/pinheiral/quem-somos" title="">Pinheiral</a></li>
+<li class="leaf"><a href="/realengo/quem-somos" title="">Realengo</a></li>
+<li class="leaf"><a href="/resende/quem-somos" title="">Resende</a></li>
+<li class="leaf"><a href="/rio-de-janeiro/quem-somos" title="">Rio de janeiro</a></li>
+<li class="leaf"><a href="/sao-goncalo/quem-somos" title="">SÃ£o GonÃ§alo</a></li>
+<li class="leaf"><a href="/sao-joao-de-meriti/quem-somos" title="">SÃ£o JoÃ£o de Meriti</a></li>
+<li class="last leaf"><a href="/volta-redonda/quem-somos" title="">Volta Redonda</a></li>
+</ul>
+</section> <!-- /.block -->
+<section id="block-block-1" class="block block-block clearfix">
+
+        <h2 class="block-title">Centrais de ConteÃºdo</h2>
+    
+  <ul><li><a href="http://10.0.10.75/noticias"><img alt="" height="40" src="/sites/all/themes/ifrj/images/publicacoes-ifrj.png" width="40" />Â NotÃ­cias</a><br />
+	Â </li>
+<li><a href="http://10.0.10.75/eventos-e-oportunidades" title=""><img alt="" height="40" src="/sites/all/themes/ifrj/images/publicacoes-ifrj.png" width="40" />Â Eventos e Oportunidades</a><br />
+	Â </li>
+<li><a href="#" title=""><img alt="" height="40" src="/sites/all/themes/ifrj/images/infograf-ifrj.png" width="40" />Â PeriÃ³dicos</a><br />
+	Â </li>
+<li><a href="#" title=""><img alt="" height="40" src="/sites/all/themes/ifrj/images/videos-ifrj.png" width="40" />Â VÃ­deos</a><br />
+	Â </li>
+<li><a href="#" title=""><img alt="" height="40" src="/sites/all/themes/ifrj/images/imagens-ifrj.png" width="40" />Â Imagens</a></li>
+</ul>
+</section> <!-- /.block -->
+<section id="block-user-login" class="block block-user clearfix">
+
+        <h2 class="block-title">Login do usuÃ¡rio</h2>
+    
+  <form action="/node?destination=node" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-type-textfield form-item-name form-item form-group">
+  <label for="edit-name">UsuÃ¡rio <span class="form-required" title="Este campo Ã© obrigatÃ³rio.">*</span></label>
+ <input class="form-control form-text required" type="text" id="edit-name" name="name" value="" size="15" maxlength="60" />
+</div>
+<div class="form-type-password form-item-pass form-item form-group">
+  <label for="edit-pass">Senha <span class="form-required" title="Este campo Ã© obrigatÃ³rio.">*</span></label>
+ <input class="form-control form-text required" type="password" id="edit-pass" name="pass" size="15" maxlength="128" />
+</div>
+<ul><li class="first last"><a href="/user/password" title="Solicitar uma nova senha por email.">Recuperar senha</a></li>
+</ul><input type="hidden" name="form_build_id" value="form-TsRTXV5ougCEmHY7TpxQSY11PAL4LDBcmzx0nWVCbCw" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<button class="btn btn-default form-submit" id="edit-submit--2" name="op" value="Entrar" type="submit">Entrar</button>
+</div></form>
+</section> <!-- /.block -->
+  </div>
+       
+      </aside>  <!-- /#sidebar-first -->
+    
+    <section class="col-sm-9">
+                  <a id="main-content"></a>
+                    <h1 class="page-header">Bem-vindo ao IFRJ</h1>
+                                                          <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <div id="first-time"><p>Nenhum conteÃºdo para a pÃ¡gina inicial foi criado ainda.</p></div>
+</section> <!-- /.block -->
+<section id="block-views-artigos-frontpage-block" class="block block-views clearfix">
+
+      
+  <div class="view view-artigos-frontpage view-id-artigos_frontpage view-display-id-block view-dom-id-32cf5220d7c039f52b91e3902bbaf2c9">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/primeiro-teste">Primeiro Teste</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/primeiro-teste"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/field/image/IMG_3410_0_1.JPG?itok=oBkxNkgt" width="480" height="320" alt="" /></a></div>  </div>  
+  <span class="views-field views-field-body">        <span class="field-content"><p>Teste um dois trÃªs.</p>
+<p>Teste um dois trÃªs.</p>
+<p>Teste um dois trÃªs.</p>
+<p>Teste um dois trÃªs....</span>  </span>  
+  <span class="views-field views-field-view-node">        <span class="field-content"><a href="/primeiro-teste">leia mais</a></span>  </span>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/teste">teste</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/teste"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/field/image/IMG_3410_0_0.JPG?itok=Zi0tg4x2" width="480" height="320" alt="" /></a></div>  </div>  
+  <span class="views-field views-field-body">        <span class="field-content"><p>teste</p>
+</span>  </span>  
+  <span class="views-field views-field-view-node">        <span class="field-content"><a href="/teste">leia mais</a></span>  </span>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/arte-e-ci%C3%AAncia-andam-lado-lado-trabalhos-acad%C3%AAmicos-curso-bacharelado-produ%C3%A7%C3%A3o-cultural">Arte e CiÃªncia andam lado a lado nos trabalhos acadÃªmicos do curso Bacharelado em ProduÃ§Ã£o Cultural</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/arte-e-ci%C3%AAncia-andam-lado-lado-trabalhos-acad%C3%AAmicos-curso-bacharelado-produ%C3%A7%C3%A3o-cultural"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/field/image/IMG_3410_0.JPG?itok=IQvtUmyb" width="480" height="320" alt="" /></a></div>  </div>  
+  <span class="views-field views-field-body">        <span class="field-content"><p>Uma disciplina bem feita Ã© aquela concluÃ­da com Ãªxito. Esse foi o caso da turma do curso Bacharelado em ProduÃ§Ã£o Cultural, do segundo semestre de 2015, que estudou a disciplina Evento e DivulgaÃ§Ã£o...</span>  </span>  
+  <span class="views-field views-field-view-node">        <span class="field-content"><a href="/arte-e-ci%C3%AAncia-andam-lado-lado-trabalhos-acad%C3%AAmicos-curso-bacharelado-produ%C3%A7%C3%A3o-cultural">leia mais</a></span>  </span>  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/semin%C3%A1rio-discute-problema-social-popula%C3%A7%C3%A3o-rua">SeminÃ¡rio discute o problema social da populaÃ§Ã£o de rua</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/semin%C3%A1rio-discute-problema-social-popula%C3%A7%C3%A3o-rua"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/field/image/Palestrantes%20Rodrigo%20e%20Marina.jpg?itok=EgCSUa6B" width="480" height="270" alt="" /></a></div>  </div>  
+  <span class="views-field views-field-body">        <span class="field-content"><p>SeminÃ¡rio promove debate sobre inclusÃ£o da populaÃ§Ã£o de rua ao SUS Um diÃ¡logo, que foi das ruas Ã  sala de aula, marcou o seminÃ¡rio que ocorreu no dia 26 de janeiro no campus Realengo.</p>
+<p>...</span>  </span>  
+  <span class="views-field views-field-view-node">        <span class="field-content"><a href="/semin%C3%A1rio-discute-problema-social-popula%C3%A7%C3%A3o-rua">leia mais</a></span>  </span>  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/resultados-impressos-exame-toefl-dispon%C3%ADveis-reitoria">Resultados impressos do exame TOEFL disponÃ­veis na reitoria</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/resultados-impressos-exame-toefl-dispon%C3%ADveis-reitoria"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/field/image/reuniao-em-2009-mostra-eduardo-paes-negociando-cooperativas-com-lideres-_0.jpeg?itok=vrRMnsL5" width="480" height="299" alt="" /></a></div>  </div>  
+  <span class="views-field views-field-body">        <span class="field-content"><p>O Instituto Federal do Rio de Janeiro (IFRJ) comunica que os resultados impressos do exame TOEFL de 2015 estÃ£o disponÃ­veis para entrega na reitoria, de segunda a sexta-feira, das 8h Ã s 12h, e Ã s...</span>  </span>  
+  <span class="views-field views-field-view-node">        <span class="field-content"><a href="/resultados-impressos-exame-toefl-dispon%C3%ADveis-reitoria">leia mais</a></span>  </span>  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/assessoria-internacional-busca-criar-plano-desenvolvimento-institucional-internacionaliza%C3%A7%C3%A3o">Assessoria Internacional busca criar um Plano de Desenvolvimento Institucional de InternacionalizaÃ§Ã£o</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/assessoria-internacional-busca-criar-plano-desenvolvimento-institucional-internacionaliza%C3%A7%C3%A3o"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/field/image/reitor2_0.png?itok=QvXlQwwe" width="480" height="360" alt="" /></a></div>  </div>  
+  <span class="views-field views-field-body">        <span class="field-content"><p>Visando construir um Plano de Desenvolvimento Institucional de InternacionalizaÃ§Ã£o (PDII), a Assessoria Internacional do Instituto Federal do Rio de Janeiro (IFRJ) se propÃµe a realizar um...</span>  </span>  
+  <span class="views-field views-field-view-node">        <span class="field-content"><a href="/assessoria-internacional-busca-criar-plano-desenvolvimento-institucional-internacionaliza%C3%A7%C3%A3o">leia mais</a></span>  </span>  </div>
+  <div class="views-row views-row-7 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/t%C3%ADtulo-bem-grande-fazer-sentido-testes">Um tÃ­tulo bem grande para fazer sentido para os testes</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/t%C3%ADtulo-bem-grande-fazer-sentido-testes"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/field/image/Pop-up%20informac%CC%A7a%CC%83o_680px%20x%20250px-1.jpg?itok=Um4tXlPx" width="480" height="176" alt="" /></a></div>  </div>  
+  <span class="views-field views-field-body">        <span class="field-content"><p>Â Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis felis, mollis vitae consequat in, pellentesque eu massa. Cras imperdiet, lectus et pulvinar eleifend, purus eros tempor...</span>  </span>  
+  <span class="views-field views-field-view-node">        <span class="field-content"><a href="/t%C3%ADtulo-bem-grande-fazer-sentido-testes">leia mais</a></span>  </span>  </div>
+  <div class="views-row views-row-8 views-row-even views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/3">Aluno ganha bolsa para intercÃ£mbio na FinlÃ¢ndia</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/node/3"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/field/image/thierno4.png?itok=z_KTV93g" width="480" height="360" alt="" /></a></div>  </div>  
+  <span class="views-field views-field-body">        <span class="field-content"><p>Thierno Cerqueira, aluno do curso de InformÃ¡tica integrado do IFRJ campus Arraial do Cabo, embarca no mÃªs de janeiro de 2016, para um ano de intercÃ¢mbio na FinlÃ¢ndia, onde irÃ¡ cursar o 3Âº ano do...</span>  </span>  
+  <span class="views-field views-field-view-node">        <span class="field-content"><a href="/node/3">leia mais</a></span>  </span>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</section> <!-- /.block -->
+<section id="block-views-eventos-frontpage-block" class="block block-views clearfix">
+
+        <h2 class="block-title">Eventos e Oportunidades</h2>
+    
+  <div class="view view-eventos-frontpage view-id-eventos_frontpage view-display-id-block view-dom-id-7e5848ad6ac169203d7bff3c348a5917">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/arrai%C3%A1-trem-b%C3%A3o">ARRAIÃ TREM BÃO</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/arrai%C3%A1-trem-b%C3%A3o"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/IMG_3410_0.JPG?itok=xjeHw7-W" width="480" height="320" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/festival-bandas-i-festival-artes-ifrj-campus-nil%C3%B3polis">Festival de Bandas do I Festival das Artes do IFRJ - Campus NilÃ³polis</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/festival-bandas-i-festival-artes-ifrj-campus-nil%C3%B3polis"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/Festival%20de%20bandas_0_0.jpg?itok=y3QQ6FgU" width="360" height="480" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/campanha-conscientiza%C3%A7%C3%A3o">Campanha de ConscientizaÃ§Ã£o</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/campanha-conscientiza%C3%A7%C3%A3o"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/dengue_0.png?itok=LsFyTJuN" width="360" height="480" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/i-semin%C3%A1rio-hist%C3%B3ria-e-filosofia-ci%C3%AAncia-ensino-ci%C3%AAncias-ifrj">I SeminÃ¡rio de HistÃ³ria e Filosofia da CiÃªncia no Ensino de CiÃªncias do IFRJ</a></span>  </div>  
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/i-semin%C3%A1rio-hist%C3%B3ria-e-filosofia-ci%C3%AAncia-ensino-ci%C3%AAncias-ifrj"><img typeof="foaf:Image" src="http://10.0.10.75/sites/default/files/styles/large/public/folder%20I%20Semina%CC%81rio%20HFC%20no%20EC%20do%20IFRJ_0_0.jpg?itok=Yul2n6Hk" width="360" height="480" alt="" /></a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</section> <!-- /.block -->
+  </div>
+    </section>
+
+      </div>
+</div>
+
+<footer class="footer container">
+    <div class="region region-footer">
+    <section id="block-system-powered-by" class="block block-system clearfix">
+
+      
+  <span>Desenvolvido com <a href="https://www.drupal.org">Drupal</a></span>
+</section> <!-- /.block -->
+  </div>
+</footer>
+
+<div id="rodape" class="col-sm-12">
+      <div class="col-sm-2">
+      	<h4>ASSUNTOS</h4>
+        <ul>
+        	<li><a href="/node/5">Acesso Ã  InformaÃ§Ã£o</a></li>
+            <li><a href="/node/71">InstituiÃ§Ã£o</a></li>
+        </ul>    
+      </div>
+      <div class="col-sm-2">
+        <h4>SERVIÃOS</h4>
+        <ul>
+        	<li><a href="/node/77">Cursos MÃ©dio / TÃ©cnico</a></li>
+            <li><a href="/node/78">Cursos GraduaÃ§Ã£o</a></li>
+            <li><a href="node/79">Cursos PÃ³s-GraduaÃ§Ã£o</a></li>
+            <li><a href="http://wiki.ifrj.edu.br/dokuwiki/doku.php?id=dgti:servicos">Central de ServiÃ§os</a></li>
+        </ul> 
+      </div>
+      <div class="col-sm-2">
+        <h4>REDES SOCIAIS</h4>
+        <ul>
+        	<li><a href="http://www.facebook.com/ifrj.ascom">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCYpGmXMywnhz8yNbQ__mUZg">Youtube</a></li>
+        </ul> 
+      </div>
+      <div class="col-sm-2">
+        <h4>NAVEGAÃÃO</h4>
+        <ul>
+        	<li>Acessibilidade</li>
+            <li>Mapa do Site</li>
+            <li>Internacional</li>
+        </ul>     
+      </div>
+   
+</div>
+
+<script language="javascript" type="text/javascript">
+	esconde();
+</script>  <script src="http://10.0.10.75/sites/all/themes/bootstrap/js/bootstrap.js?o9g5xa"></script>
+  
+  <div id="footer-brasil"></div>
+  <script src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script> 
+</body>
+</html>
+ 
+

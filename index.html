@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>SIG</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/principal.css">
+</head>
+<body>
+    <input type="file" id="arqTabela" accept=".csv">
+	<input type="file" id="arqMalha" accept=".shp,.json">
+    
+	<div id="sidebar">
+        <label class="titulo">SIG</label>
+        <a class="menu" id="menuInicio">
+            <img src="img/inicio.png">
+            <label>Inicio</label>
+        </a>
+        <a class="menu ativo selecionavel">
+            <img src="img/mapas.png">
+            <label>Mapa</label>
+        </a>
+        <a class="menu selecionavel" id="menuTabela">
+            <img src="img/tabela.png">
+            <label>Tabela</label>
+        </a>
+        <a class="menu" id="menuMalha">
+            <img src="img/malha.png">
+            <label>Malha</label>
+        </a>
+        <a class="menu selecionavel">
+            <img src="img/sql.png">
+            <label>SQL</label>
+        </a>
+        <a class="menu">
+            <img src="img/exportar.png">
+            <label>Exportar</label>
+        </a>
+        <a class="menu selecionavel">
+            <img src="img/configuracoes.png">
+            <label>Configurações</label>
+        </a>
+    </div>
+    
+    <div id="container">
+        <div id="menuMapa">
+            <h3>Mapa</h3>
+            <label>
+                Marcadores
+                <input id="checkMarcadores" type="checkbox">
+                <span class="lever"></span>
+            </label>
+            <label>
+                Malha
+                <input id="checkMalha" type="checkbox">
+                <span class="lever"></span>
+            </label>
+            <label>
+                M. Calor
+                <input id="checkDensidade" type="checkbox">
+                <span class="lever"></span>
+            </label>
+        </div>
+        <div id="mapa"></div>
+        <div id="tabela"></div>
+    </div>
+    
+    
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization&key=AIzaSyDpryBH-J1Xoc-7v1LpfafupW3xGfe1vNQ"></script>
+	<script src="js/jquery2.js"></script>
+	<script src="js/jquery.csv.min.js"></script>
+	<script src="js/compactador.js"></script>
+	<script src="sistema.js"></script>
+
+</body>
+</html>
