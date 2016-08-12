@@ -14,9 +14,59 @@ var posicoes = [];
 var marcadores = [];
 var mapaCalor;
 
-$(function() {
-    
+$(function() {   
+    document.getElementById('container').addEventListener('dragenter',mostraDrag,false);
+    var dropContainer = document.getElementById('drop-silhouette');
+    dropContainer.addEventListener('dragover', mostraDrag, false);
+    dropContainer.addEventListener('drop', handleDrop, false);
+    dropContainer.addEventListener('dragleave', escondeDrag, false);
 });
+
+function mostraDrag(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    document.getElementById('drop-silhouette').style.display = 'block';
+    //document.getElementById('menuMapa').style.display = 'none';
+    return false;
+}
+
+function escondeDrag(e) {
+    document.getElementById('drop-silhouette').style.display = 'none';
+    document.getElementById('menuMapa').style.display = 'block';
+}
+function handleDrop(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    escondeDrag(e);
+
+    var arquivos = e.dataTransfer.files;
+//MOSTRA LOADING
+    if (arquivos.length) {
+        for (var i=0;i<arquivos.length;i++) {
+            var leitor = new FileReader();
+            leitor.nome = arquivos[i].name;
+            leitor.onload = function(e) {
+                //VERIFICA TIPO
+                if(e.target.nome.endsWith(".shp")){
+                    var shapefile = new Shapefile({
+                        shp: arquivos[0]
+                    }, function(data){
+                        mapa.data.addGeoJson(data.geojson);
+                    });
+                    
+                } else if(e.target.nome.endsWith(".csv")) {
+                    
+                } else {
+                    //carregaGeoJSON(e.target.result);
+                }
+            };
+            //reader.onerror = function(e) {
+             //   console.error('reading failed');
+            //};
+            leitor.readAsText(arquivos[i]);
+        }
+    }
+}
 
 $(".menu.selecionavel").click(function(e){
     $(".menu").not(this).removeClass("ativo");
@@ -109,59 +159,52 @@ $("#arqTabela").change(function(e){
 
 var tmp;
 
-function loadArea(codigo){	
-		$.ajax({// ajax das informações do mapa
-			url: 'ni.json',
-			dataType: 'text',
-			success: function(data) {
-                
-				eval("var myData = "+data.toString()+";");
-				
-				var myShapesComp = myData.shapes;
-				console.log(myShapesComp);
-				loadedBounds[0] = {NORTE: myData.bounds.NORTE, SUL: myData.bounds.SUL, LESTE: myData.bounds.LESTE, OESTE: myData.bounds.OESTE};
-				
-				fitBounds();
-	
-				for (var codarea in myShapesComp)
-				{
-					var myShapes = compactador.descompacta(myShapesComp[codarea]);
-					
-					var aux1 = new google.maps.MVCArray();
-					for (var i=0; i<myShapes.length; i++)
-					{
-						var aux2 = new google.maps.MVCArray();
-						if (i==0)
-						{
-							for (var j=0; j<myShapes[i].length; j++)
-								aux2.push(new google.maps.LatLng(myShapes[i][j][0], myShapes[i][j][1]));
-						}
-						else// inverte para fazer buracos
-						{
-							for (var j=myShapes[i].length-1; j>=0; j--)
-								aux2.push(new google.maps.LatLng(myShapes[i][j][0], myShapes[i][j][1]));
-						}
-						// baca para não desenhar os pelinhos...
-						if (aux2.getLength() > 10 || aux2.getAt(0).toString() != aux2.getAt(aux2.getLength() - 1).toString())
-							aux1.push(aux2)
-					}
-					tmp = new google.maps.Polygon({
-						map:			mapa,
-						clickable:		true,
-						fillColor:		"#eee",
-						fillOpacity:	1,
-						strokeColor:	"#555",
-						strokeWeight:	0.5,
-						strokeOpacity:	1,
-						paths:			aux1,
-						id:				codarea
-					});
-					google.maps.event.addListener(tmp, 'click', function() {
-						popUpDashboard(this.id);
-					});
-				}
-			}
-		});
+function carregaGeoJSON(conteudo){	
+    eval("var myData = "+data.toString()+";");
+
+    var myShapesComp = myData.shapes;
+    console.log(myShapesComp);
+    loadedBounds[0] = {NORTE: myData.bounds.NORTE, SUL: myData.bounds.SUL, LESTE: myData.bounds.LESTE, OESTE: myData.bounds.OESTE};
+
+    fitBounds();
+
+    for (var codarea in myShapesComp)
+    {
+        var myShapes = compactador.descompacta(myShapesComp[codarea]);
+
+        var aux1 = new google.maps.MVCArray();
+        for (var i=0; i<myShapes.length; i++)
+        {
+            var aux2 = new google.maps.MVCArray();
+            if (i==0)
+            {
+                for (var j=0; j<myShapes[i].length; j++)
+                    aux2.push(new google.maps.LatLng(myShapes[i][j][0], myShapes[i][j][1]));
+            }
+            else// inverte para fazer buracos
+            {
+                for (var j=myShapes[i].length-1; j>=0; j--)
+                    aux2.push(new google.maps.LatLng(myShapes[i][j][0], myShapes[i][j][1]));
+            }
+            // baca para não desenhar os pelinhos...
+            if (aux2.getLength() > 10 || aux2.getAt(0).toString() != aux2.getAt(aux2.getLength() - 1).toString())
+                aux1.push(aux2)
+        }
+        tmp = new google.maps.Polygon({
+            map:			mapa,
+            clickable:		true,
+            fillColor:		"#eee",
+            fillOpacity:	1,
+            strokeColor:	"#555",
+            strokeWeight:	0.5,
+            strokeOpacity:	1,
+            paths:			aux1,
+            id:				codarea
+        });
+        google.maps.event.addListener(tmp, 'click', function() {
+            popUpDashboard(this.id);
+        });
+    }
 }
 var loadedBounds = [];
 function fitBounds(){
