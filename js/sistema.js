@@ -4,6 +4,7 @@ var mapOptions = {
   center: new google.maps.LatLng(-22.9108558, -43.5884176)
 };
 var mapa = new google.maps.Map(document.getElementById('mapa'), mapOptions);
+
 var geocoder = new google.maps.Geocoder();
 var data;
 var compactador = new COMPACTADOR();
@@ -102,6 +103,7 @@ $("#checkDensidade").change(function(e){
 
 
 //========| Marcadores |========//
+var clusterMarcadores = new MarkerClusterer(mapa, [],{imagePath: './img/marcadores/m'});
 function adicionaMarcadores() { //TODO:só adicionar qnd for usar (1a vez)
     var temp = null;
     if($("#checkMarcadores").is(":checked")){
@@ -110,8 +112,8 @@ function adicionaMarcadores() { //TODO:só adicionar qnd for usar (1a vez)
     for(i=0;i<posicoes.length;i++){
         //var conteudo = "Idade,Renda,";
         var marcador = new google.maps.Marker({
-            position: posicoes[marcadores.length],
-            map: temp
+            position: posicoes[marcadores.length]
+//            map: temp
         });	
         var janela = new google.maps.InfoWindow({
            content: "aaa"
@@ -121,11 +123,17 @@ function adicionaMarcadores() { //TODO:só adicionar qnd for usar (1a vez)
         });
         marcadores.push(marcador);
     }
+    if(temp != null) { clusterMarcadores.addMarkers(marcadores); }
 }
 function mudaMarcadores(map){
-    for(i=0;i<marcadores.length;i++){
-        marcadores[i].setMap(map);
-    }
+//    var t0 = performance.now();
+
+    if($("#checkMarcadores").is(":checked")){
+         clusterMarcadores.addMarkers(marcadores);
+    } else { clusterMarcadores.clearMarkers(); }
+    
+//    var t1 = performance.now();
+//    console.log(t1 - t0);
 }
 //===========================//
 
