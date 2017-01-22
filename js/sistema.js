@@ -1,14 +1,13 @@
-var mapOptions = {
+var opcoesMapa = {
   zoom: 12,
   mapTypeId: google.maps.MapTypeId.ROADMAP,
   center: new google.maps.LatLng(-22.9108558, -43.5884176)
 };
-var mapa = new google.maps.Map(document.getElementById('mapa'), mapOptions);
+var mapa = new google.maps.Map(document.getElementById('mapa'), opcoesMapa);
 
 var geocoder = new google.maps.Geocoder();
 var data;
 var compactador = new COMPACTADOR();
-
 
 var tabela;
 var posicoes = [];
@@ -22,52 +21,6 @@ $(function() {
     dropContainer.addEventListener('drop', handleDrop, false);
     dropContainer.addEventListener('dragleave', escondeDrag, false);
 });
-
-function mostraDrag(e) {
-    e.stopPropagation();
-    e.preventDefault();
-    document.getElementById('drop-silhouette').style.display = 'block';
-    //document.getElementById('menuMapa').style.display = 'none';
-    return false;
-}
-
-function escondeDrag(e) {
-    document.getElementById('drop-silhouette').style.display = 'none';
-    document.getElementById('menuMapa').style.display = 'block';
-}
-function handleDrop(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    escondeDrag(e);
-
-    var arquivos = e.dataTransfer.files;
-//MOSTRA LOADING
-    if (arquivos.length) {
-        for (var i=0;i<arquivos.length;i++) {
-            var leitor = new FileReader();
-            leitor.nome = arquivos[i].name;
-            leitor.onload = function(e) {
-                //VERIFICA TIPO
-                if(e.target.nome.endsWith(".shp")){
-                    var shapefile = new Shapefile({
-                        shp: arquivos[0]
-                    }, function(data){
-                        mapa.data.addGeoJson(data.geojson);
-                    });
-                    
-                } else if(e.target.nome.endsWith(".csv")) {
-                    
-                } else {
-                    //carregaGeoJSON(e.target.result);
-                }
-            };
-            //reader.onerror = function(e) {
-             //   console.error('reading failed');
-            //};
-            leitor.readAsText(arquivos[i]);
-        }
-    }
-}
 
 $(".menu.selecionavel").click(function(e){
     $(".menu").not(this).removeClass("ativo");
@@ -84,9 +37,9 @@ $("#menuMalha").click(function(e){
 //=====| Menu Mapa |=====//
 $("#checkMarcadores").change(function(e){ 
     if($(this).is(":checked")){
-        mudaMarcadores(mapa);
+        mudaMarcadores();
     } else {
-        mudaMarcadores(null);
+        mudaMarcadores();
     }    
 });
 $("#checkMalha").change(function(e){ 
@@ -102,41 +55,6 @@ $("#checkDensidade").change(function(e){
 //======================//
 
 
-//========| Marcadores |========//
-var clusterMarcadores = new MarkerClusterer(mapa, [],{imagePath: './img/marcadores/m'});
-function adicionaMarcadores() { //TODO:só adicionar qnd for usar (1a vez)
-    var temp = null;
-    if($("#checkMarcadores").is(":checked")){
-         temp = mapa;
-    }
-    for(i=0;i<posicoes.length;i++){
-        //var conteudo = "Idade,Renda,";
-        var marcador = new google.maps.Marker({
-            position: posicoes[marcadores.length]
-//            map: temp
-        });	
-        var janela = new google.maps.InfoWindow({
-           content: "aaa"
-        });
-        marcador.addListener("click",function(){
-            janela.open(mapa,this); 
-        });
-        marcadores.push(marcador);
-    }
-    if(temp != null) { clusterMarcadores.addMarkers(marcadores); }
-}
-function mudaMarcadores(map){
-//    var t0 = performance.now();
-
-    if($("#checkMarcadores").is(":checked")){
-         clusterMarcadores.addMarkers(marcadores);
-    } else { clusterMarcadores.clearMarkers(); }
-    
-//    var t1 = performance.now();
-//    console.log(t1 - t0);
-}
-//===========================//
-
 //========| Mapa Calor |========//
 function geraMapaCalor(){
     var temp = null;
@@ -151,19 +69,6 @@ function geraMapaCalor(){
 }
 //=============================//
 
-$("#arqTabela").change(function(e){
-    var arq = e.target.files[0];
-    var leitor = new FileReader();
-    leitor.onload = function(r) {
-        tabela = $.csv.toArrays(r.target.result);
-        for(i=0;i<tabela.length;i++){
-            posicoes.push(new google.maps.LatLng(tabela[i][0], tabela[i][1]));
-        }
-        adicionaMarcadores();
-        geraMapaCalor();
-    };
-    leitor.readAsText(arq); 
-});
 
 var tmp;
 
@@ -241,7 +146,6 @@ function popUpDashboard(id){
 }
 
 
-
 function mudaGradiente(){
 	var gradient = [
     'rgba(0, 255, 255, 0)',
@@ -262,3 +166,47 @@ function mudaGradiente(){
   heatmap.set('gradient', heatmap.get('gradient') ? null : gradient);
 }
 
+function mostraDrag(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    document.getElementById('drop-silhouette').style.display = 'block';
+    //document.getElementById('menuMapa').style.display = 'none';
+    return false;
+}
+function escondeDrag(e) {
+    document.getElementById('drop-silhouette').style.display = 'none';
+    document.getElementById('menuMapa').style.display = 'block';
+}
+function handleDrop(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    escondeDrag(e);
+
+    var arquivos = e.dataTransfer.files;
+//MOSTRA LOADING
+    if (arquivos.length) {
+        for (var i=0;i<arquivos.length;i++) {
+            var leitor = new FileReader();
+            leitor.nome = arquivos[i].name;
+            leitor.onload = function(e) {
+                //VERIFICA TIPO
+                if(e.target.nome.endsWith(".shp")){
+                    var shapefile = new Shapefile({
+                        shp: arquivos[0]
+                    }, function(data){
+                        mapa.data.addGeoJson(data.geojson);
+                    });
+                    
+                } else if(e.target.nome.endsWith(".csv")) {
+                    
+                } else {
+                    //carregaGeoJSON(e.target.result);
+                }
+            };
+            //reader.onerror = function(e) {
+             //   console.error('reading failed');
+            //};
+            leitor.readAsText(arquivos[i]);
+        }
+    }
+}
