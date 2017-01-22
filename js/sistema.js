@@ -11,7 +11,6 @@ var compactador = new COMPACTADOR();
 
 var tabela;
 var posicoes = [];
-var marcadores = [];
 var mapaCalor;
 
 $(function() {   
@@ -25,6 +24,11 @@ $(function() {
 $(".menu.selecionavel").click(function(e){
     $(".menu").not(this).removeClass("ativo");
     $(this).addClass("ativo");
+    
+    $("[ativo=true]").attr("ativo",false);
+    $("#" + $(this).attr("div")).attr("ativo",true);
+    
+    if($(this).attr("div") != "mapa") { $("#menuMapa").hide(); } else { $("#menuMapa").show(); }
 });
 
 $("#menuInicio").click(function(e){
@@ -33,6 +37,7 @@ $("#menuInicio").click(function(e){
 $("#menuMalha").click(function(e){
     $("#arqMalha").trigger("click");
 });
+
 
 //=====| Menu Mapa |=====//
 $("#checkMarcadores").change(function(e){ 
